@@ -24,8 +24,6 @@ services:
   # Frontend Service 
   app-client:
     image: ukashaahmed/spring-security-react-ant-design-polls-app-master-app-client:latest 
-      args:
-        REACT_APP_API_BASE_URL: http://localhost:8080/api
     ports:
       - 9090:80 # Forward the exposed port 80 on the container to port 80 on the host machine
     restart: always
